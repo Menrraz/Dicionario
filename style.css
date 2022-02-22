@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Roboto+Slab:wght@300;400;500&display=swap');
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Lora', serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("dicio.jpg");
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
+main {
+    animation-name: main;
+    background-color: bisque;
+    border: 2px solid rgb(255, 195, 122);
+    font-size: 17px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 4px 1px #0000007a;
+}
+form {
+    display: block;
+    margin: 10px auto 10px auto;
+    text-align: center;
+}
+input#search {
+    background-color: rgb(255, 237, 215);
+    border: 2px solid rgb(255, 195, 122);
+    font-size: 17px;
+    padding: 5px;
+    width: 80%;
+}
+input#button {
+    background-color: rgb(255, 237, 215);
+    border: 2px solid rgb(255, 195, 122);
+    font-size: 14px;
+    padding: 5px;
+}
+header {
+    color: rgb(121, 66, 0);
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+#result {
+    color: rgb(121 66 0);
+    font-size: 16px;
+    text-align: center;
+}
+.p-class {
+    border-bottom: 1px solid rgb(255, 186, 101);
+    color: rgb(121, 66, 0);
+    font-size: 13px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    margin: 8px 0 8px 0;
+    padding: 5px 0 5px 0;
+}
+.p-meanings {
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0 5px 0 5px;
+    text-align: justify;
+}
+.p-meanings-span {
+    color: rgb(216, 147, 62);
+}
+footer {
+    color: white;
+    padding: 0 5px 10px 5px;
+    text-align: center;
+}
+a {
+    color: rgb(255, 211, 157);
+}
+a:visited{
+    color: rgb(216, 147, 62);
+}
