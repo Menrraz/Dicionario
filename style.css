@@ -61,6 +61,12 @@ input#button {
     font-size: 14px;
     padding: 5px;
 }
+input#button:hover {
+    background-color: rgb(255, 195, 122);
+}
+input#button:active {
+    transform: scale(0.9);
+}
 header {
     color: rgb(121, 66, 0);
     font-size: 20px;
