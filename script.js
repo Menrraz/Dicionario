@@ -25,6 +25,7 @@ function getData() {
         }).catch(reject => {
             p.innerHTML = 'Palavra não encontrada. (404)'
         })
+    search.value = ''
 }
 // Display data in DOM
 function displayData(word, data) {
