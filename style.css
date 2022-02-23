@@ -4,7 +4,6 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto Slab', serif;
 font-family: 'Lora', serif;
 */
-
 * {
     margin: 0;
     padding: 0;
@@ -20,18 +19,21 @@ body {
     height: 100vh;
 }
 h1 {
-    color: white;
+    color: rgb(216, 147, 62);
     text-align: center;
     padding-top: 5px;
+    text-shadow: 3px 2px 1px black;
+    font-family: 'Lora', serif;
 }
 main {
     background-color: bisque;
+    border-radius: 15px;
     border: 2px solid rgb(255, 195, 122);
+    box-shadow: 3px 3px 4px 1px #0000007a;
     font-size: 17px;
     margin: 5px;
     padding: 10px;
-    border-radius: 15px;
-    box-shadow: 3px 3px 4px 1px #0000007a;
+    width: 95%;
 }
 @media (min-width: 500px) {
     main {
@@ -75,7 +77,7 @@ header {
     margin-top: 15px;
     margin-bottom: 5px;
 }
-#result {
+#error {
     color: rgb(121 66 0);
     font-size: 16px;
     text-align: center;
@@ -109,5 +111,8 @@ a {
     color: rgb(255, 211, 157);
 }
 a:visited{
+    color: rgb(216, 147, 62);
+}
+a:hover {
     color: rgb(216, 147, 62);
 }
