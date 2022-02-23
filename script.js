@@ -5,21 +5,21 @@ const showWord = document.getElementById('word')
 const section = document.getElementById('section')
 search.addEventListener('keypress', e => {
     if (e.key == 'Enter') {
-        p.innerHTML = 'carregando...'
         getData()
     }
 })
 // Get API data
 function getData() {
+    p.innerHTML = 'carregando...'
     let word = search.value
     if (search.value.length == 0) {
         p.innerHTML = 'Por favor, busque alguma palavra.'
         return 0;
     }
-    p.innerHTML = '' // Delete the error message if user type valid data
     const url = fetch(`https://significado.herokuapp.com/${word}`)
         .then(response => response.json())
         .then(data => {
+            p.innerHTML = '' // Delete the error message if user type valid data
             let newData = [].concat(data) 
             displayData(word, newData)
         }).catch(reject => {
