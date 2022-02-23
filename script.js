@@ -29,7 +29,6 @@ function getData() {
 // Display data in DOM
 function displayData(word, data) {
     const body = document.querySelector('body')
-    body.style.justifyContent = 'flex-start'
     // Remove div with old meaning
     let allMeanings = document.getElementById('allMeanings').remove()
     // Create it again but empty
